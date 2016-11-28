@@ -39,7 +39,7 @@
 				var allItems = result.data.menu_items;
 				var foundItems = [];
 				for(var i=0; i<allItems.length; i++){
-					if(searchTerm.length != 0 && allItems[i].name.toLowerCase().indexOf(searchTerm.toLowerCase()) !== -1){
+					if(searchTerm.length != 0 && allItems[i].description.toLowerCase().indexOf(searchTerm.toLowerCase()) !== -1){
 						foundItems.push(allItems[i]);
 					}
 				}
